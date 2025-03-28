@@ -3,7 +3,6 @@ import boto3
 from datetime import datetime, timedelta
 import csv
 import argparse
-PATCH_BASELINE_ID = "pb-0a49c8a5b59b6f6bc"
 def update_inventory(csv_file, inventory_file):
     """
     Reads the inventory and CSV file, patches high-severity instances immediately,
